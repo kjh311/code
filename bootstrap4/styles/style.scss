@@ -1,5 +1,72 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
+// Your variable overrides
+// $body-bg: #000;
+// $body-color: #111;
 
-body{
-	// background-color: red;
+// Bootstrap and its default variables
+@import "../bootstrap/scss/bootstrap";
+
+
+
+
+
+.container{
+	background-color: $cyan;
+	width: 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 20px 0px 20px 0px;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+  	-ms-flex-pack: distribute;
+  	    justify-content: space-around;
+	@include media-breakpoint-up(sm) {
+	    width: 60%;
+	}
+	@include media-breakpoint-up(md) {
+		width: 70%;
+	}
+	@include media-breakpoint-up(lg) {
+	    width: 100%;
+	}
 }
+
+.box{
+	border: 2px solid $green;
+	height: 100px;
+	width: 100px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	margin: 20px;
+}
+
+.one{
+	@include media-breakpoint-up(sm) {
+	    order: 1;
+	}
+}
+.two{
+	@include media-breakpoint-up(sm) {
+	    order: 0;
+	}
+}
+
+.col-sm{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+}
+
+
+
+
+
+
+

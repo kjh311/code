@@ -6353,4 +6353,53 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
+.container {
+  background-color: #17a2b8;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0px 20px 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  @media (min-width: 576px) {
+    .container {
+      width: 60%; } }
+  @media (min-width: 768px) {
+    .container {
+      width: 70%; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 100%; } }
+
+.box {
+  border: 2px solid #28a745;
+  height: 100px;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 20px; }
+
+@media (min-width: 576px) {
+  .one {
+    order: 1; } }
+
+@media (min-width: 576px) {
+  .two {
+    order: 0; } }
+
+.col-sm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
 /*# sourceMappingURL=style.css.map */
