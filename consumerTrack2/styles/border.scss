@@ -1,14 +1,14 @@
 %color-border {
   outline: 2px solid yellow;
-  @include media-breakpoint-up(sm) { 
-  	outline: 2px solid orange;
-  }
-  @include media-breakpoint-up(md) { 
-  	outline: 2px solid red;
-  }
-  @include media-breakpoint-up(lg) { 
-  	outline: 2px solid purple;
-  }
+    @include media-breakpoint-up(sm) { 
+    	outline: 2px solid orange;
+    }
+    @include media-breakpoint-up(md) { 
+    	outline: 2px solid red;
+    }
+    @include media-breakpoint-up(lg) { 
+    	outline: 2px solid purple;
+    }
 }
 
 .mockup{
@@ -16,8 +16,8 @@
 	opacity: 0.5;
 	position: absolute;
 	top: 0;
-    margin-left: auto; 
-    margin-right: auto; 	
-    right: 0;
+  margin-left: auto; 
+  margin-right: auto; 	
+  right: 0;
 	left: 0;
 }

@@ -6353,16 +6353,16 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
-.container {
+.container-fluid {
   outline: 2px solid yellow; }
   @media (min-width: 576px) {
-    .container {
+    .container-fluid {
       outline: 2px solid orange; } }
   @media (min-width: 768px) {
-    .container {
+    .container-fluid {
       outline: 2px solid red; } }
   @media (min-width: 992px) {
-    .container {
+    .container-fluid {
       outline: 2px solid purple; } }
 
 .mockup {
@@ -6377,5 +6377,9 @@ a.text-dark:focus, a.text-dark:hover {
 
 body {
   font-size: 16px; }
+
+.container-fluid {
+  height: 100px;
+  max-width: 1200px; }
 
 /*# sourceMappingURL=style.css.map */
