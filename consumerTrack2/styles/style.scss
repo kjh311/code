@@ -1,0 +1,16 @@
+// Your variable overrides
+// Bootstrap and its default variables
+@import "../bootstrap/scss/bootstrap";
+@import "border";
+
+
+
+
+body {
+    font-size: 16px;
+    // background-color: red;
+}
+
+.container{
+	@extend %color-border;
+}
