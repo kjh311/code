@@ -3,7 +3,8 @@
 @import "../bootstrap/scss/bootstrap";
 @import "border";
 
-
+// COLORS
+$border-color: #e4e4e4;
 
 
 body {
@@ -12,7 +13,55 @@ body {
 }
 
 .container-fluid{
-	@extend %color-border;
-	height: 100px;
+	// @extend %color-border;
+	// height: 100px;
 	max-width: 1200px;
+}
+
+header{
+	border-bottom: 2px solid $border-color;
+	padding-bottom: 15px;
+		@include media-breakpoint-up(sm) { 
+		    padding-bottom: 1px;
+		}
+		@include media-breakpoint-up(md) { 
+		    padding-bottom: 5px;
+		}
+		@include media-breakpoint-up(lg) { 
+		    padding-bottom: 9px;
+		}
+	.bloom-logo{
+		height: 61px;
+		margin-top: 11px;
+			@include media-breakpoint-up(sm) { 
+		    	height: 37px;
+				margin-top: 8px;
+		    }
+		    @include media-breakpoint-up(md) { 
+		    	height: 39px;
+				margin-top: 13px;
+		    }
+		    @include media-breakpoint-up(lg) { 
+		    	height: 52px;
+				margin: 9px 0px 0px 28px;
+		    }
+	}
+	.rates-logo{
+		width: 230px;
+			@include media-breakpoint-up(sm) { 
+		    	width: 140px;
+		    	height: 30px;
+				margin-top: -3px;
+		    }
+		    @include media-breakpoint-up(md) { 
+		    	width: 147px;
+		    	height: 27px;
+				margin-top: -7px;
+		    }
+		    @include media-breakpoint-up(lg) { 
+		    	width: 195px;
+		    	height: 33px;
+				margin: 19px 20px 0px 0px;
+		    }
+	}
 }

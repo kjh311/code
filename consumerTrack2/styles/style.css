@@ -6353,18 +6353,6 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
-.container-fluid {
-  outline: 2px solid yellow; }
-  @media (min-width: 576px) {
-    .container-fluid {
-      outline: 2px solid orange; } }
-  @media (min-width: 768px) {
-    .container-fluid {
-      outline: 2px solid red; } }
-  @media (min-width: 992px) {
-    .container-fluid {
-      outline: 2px solid purple; } }
-
 .mockup {
   z-index: 100;
   opacity: 0.5;
@@ -6379,7 +6367,51 @@ body {
   font-size: 16px; }
 
 .container-fluid {
-  height: 100px;
   max-width: 1200px; }
+
+header {
+  border-bottom: 2px solid #e4e4e4;
+  padding-bottom: 15px; }
+  @media (min-width: 576px) {
+    header {
+      padding-bottom: 1px; } }
+  @media (min-width: 768px) {
+    header {
+      padding-bottom: 5px; } }
+  @media (min-width: 992px) {
+    header {
+      padding-bottom: 9px; } }
+  header .bloom-logo {
+    height: 61px;
+    margin-top: 11px; }
+    @media (min-width: 576px) {
+      header .bloom-logo {
+        height: 37px;
+        margin-top: 8px; } }
+    @media (min-width: 768px) {
+      header .bloom-logo {
+        height: 39px;
+        margin-top: 13px; } }
+    @media (min-width: 992px) {
+      header .bloom-logo {
+        height: 52px;
+        margin: 9px 0px 0px 28px; } }
+  header .rates-logo {
+    width: 230px; }
+    @media (min-width: 576px) {
+      header .rates-logo {
+        width: 140px;
+        height: 30px;
+        margin-top: -3px; } }
+    @media (min-width: 768px) {
+      header .rates-logo {
+        width: 147px;
+        height: 27px;
+        margin-top: -7px; } }
+    @media (min-width: 992px) {
+      header .rates-logo {
+        width: 195px;
+        height: 33px;
+        margin: 19px 20px 0px 0px; } }
 
 /*# sourceMappingURL=style.css.map */
