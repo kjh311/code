@@ -6353,6 +6353,18 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
+.second .form-wrapper, .second .pig-wrapper {
+  outline: 2px solid yellow; }
+  @media (min-width: 576px) {
+    .second .form-wrapper, .second .pig-wrapper {
+      outline: 2px solid orange; } }
+  @media (min-width: 768px) {
+    .second .form-wrapper, .second .pig-wrapper {
+      outline: 2px solid red; } }
+  @media (min-width: 992px) {
+    .second .form-wrapper, .second .pig-wrapper {
+      outline: 2px solid purple; } }
+
 .mockup {
   z-index: 100;
   opacity: 0.5;
@@ -6415,5 +6427,64 @@ header {
         width: 195px;
         height: 33px;
         margin: 19px 20px 0px 0px; } }
+
+.second {
+  padding: 19px 18px 0px 18px;
+  max-width: 370px; }
+  @media (min-width: 576px) {
+    .second {
+      padding: 18px 15px 0px 15px; } }
+  @media (min-width: 768px) {
+    .second {
+      max-width: 1200px;
+      padding: 36px 15px 0px 15px; } }
+  .second .form-wrapper {
+    height: 792px;
+    max-width: 354px;
+    margin-top: 18px;
+    border: 2px solid #e4e4e4; }
+    @media (min-width: 576px) {
+      .second .form-wrapper {
+        max-width: 290px;
+        height: 482px;
+        margin-top: 0px; } }
+    @media (min-width: 768px) {
+      .second .form-wrapper {
+        max-width: 300px;
+        margin-left: 57px;
+        height: 505px; } }
+  @media (min-width: 768px) {
+    .second .pig-wrapper {
+      max-width: 300px; } }
+  .second .checkup-text {
+    color: #3a3a3a;
+    font-size: 2.1em;
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last: justify;
+    line-height: 47px; }
+    @media (min-width: 576px) {
+      .second .checkup-text {
+        font-size: 1.6em;
+        text-align: center;
+        text-align-last: center;
+        letter-spacing: 1.5px;
+        line-height: 29px; } }
+    @media (min-width: 768px) {
+      .second .checkup-text {
+        font-size: 3em;
+        text-align: left;
+        text-align-last: left;
+        line-height: 49px; } }
+  .second .stacks-text {
+    color: #8e8e8e;
+    font-size: 1.15em;
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last: justify; }
+    @media (min-width: 576px) {
+      .second .stacks-text {
+        font-size: 0.76em;
+        margin-top: -2px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,6 +5,8 @@
 
 // COLORS
 $border-color: #e4e4e4;
+$dark-font: #3a3a3a;
+$light-font: #8e8e8e;
 
 
 body {
@@ -65,5 +67,78 @@ header{
 		    	height: 33px;
 				margin: 19px 20px 0px 0px;
 		    }
+	}
+}
+
+.second{
+	padding: 19px 18px 0px 18px; 
+	max-width: 370px;
+
+		@include media-breakpoint-up(sm) { 
+	    	padding: 18px 15px 0px 15px; 
+		}
+		@include media-breakpoint-up(md) { 
+	    	max-width: 1200px;
+	    	padding: 36px 15px 0px 15px; 
+		}
+	.form-wrapper{
+		@extend %color-border;
+		height: 792px;
+		max-width: 354px;
+		margin-top: 18px;
+		border: 2px solid $border-color;
+			@include media-breakpoint-up(sm) { 
+		    	max-width: 290px;
+		    	height: 482px;
+		    	margin-top: 0px;
+		    	// margin-left: 57px;
+			}
+			@include media-breakpoint-up(md) { 
+		    	max-width: 300px;
+		    	margin-left: 57px;
+		    	height: 505px;
+			}
+	}
+	.pig-wrapper{
+		// max-width: 100%;
+		@extend %color-border;
+		@include media-breakpoint-up(md) { 
+	    	max-width: 300px;
+	    	// margin-left: 30px;
+		}
+	}
+	.checkup-text{
+		color: $dark-font;
+		font-size: 2.1em;
+		text-align: justify;
+		text-justify: inter-word;
+		text-align-last: justify;
+		line-height: 47px;
+			@include media-breakpoint-up(sm) { 
+		    	font-size: 1.6em;
+		    	text-align: center;
+		    	text-align-last: center;
+		    	letter-spacing: 1.5px;
+		    	line-height: 29px;
+			}
+			@include media-breakpoint-up(md) { 
+		    	font-size: 3em;
+		    	text-align: left;
+		    	text-align-last: left;
+		    	// padding-left: 25px;
+		    	line-height: 49px;
+		    	
+			}
+	}
+	.stacks-text{
+		color: $light-font;
+		font-size: 1.15em;
+		text-align: justify;
+		text-justify: inter-word;
+		text-align-last: justify;
+			@include media-breakpoint-up(sm) { 
+		    	font-size: 0.76em;
+		    	margin-top: -2px;
+			}
 	}
 }
