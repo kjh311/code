@@ -20,7 +20,7 @@ body {
 
 header{
 	border-bottom: 2px solid $border-color;
-	padding-bottom: 15px;
+	padding-bottom: 12px;
 		@include media-breakpoint-up(sm) { 
 		    padding-bottom: 1px;
 		}
@@ -32,14 +32,14 @@ header{
 		}
 	.bloom-logo{
 		height: 61px;
-		margin-top: 11px;
+		margin: 11px 0px 0px 1px;
 			@include media-breakpoint-up(sm) { 
 		    	height: 37px;
 				margin-top: 8px;
 		    }
 		    @include media-breakpoint-up(md) { 
 		    	height: 39px;
-				margin-top: 13px;
+				margin-top: 14px;
 		    }
 		    @include media-breakpoint-up(lg) { 
 		    	height: 52px;
@@ -47,7 +47,9 @@ header{
 		    }
 	}
 	.rates-logo{
-		width: 230px;
+		width: 227px;
+		height: 38px;
+		margin-top: -3px;
 			@include media-breakpoint-up(sm) { 
 		    	width: 140px;
 		    	height: 30px;
@@ -55,7 +57,7 @@ header{
 		    }
 		    @include media-breakpoint-up(md) { 
 		    	width: 147px;
-		    	height: 27px;
+		    	height: 26px;
 				margin-top: -7px;
 		    }
 		    @include media-breakpoint-up(lg) { 

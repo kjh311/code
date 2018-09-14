@@ -6371,7 +6371,7 @@ body {
 
 header {
   border-bottom: 2px solid #e4e4e4;
-  padding-bottom: 15px; }
+  padding-bottom: 12px; }
   @media (min-width: 576px) {
     header {
       padding-bottom: 1px; } }
@@ -6383,7 +6383,7 @@ header {
       padding-bottom: 9px; } }
   header .bloom-logo {
     height: 61px;
-    margin-top: 11px; }
+    margin: 11px 0px 0px 1px; }
     @media (min-width: 576px) {
       header .bloom-logo {
         height: 37px;
@@ -6391,13 +6391,15 @@ header {
     @media (min-width: 768px) {
       header .bloom-logo {
         height: 39px;
-        margin-top: 13px; } }
+        margin-top: 14px; } }
     @media (min-width: 992px) {
       header .bloom-logo {
         height: 52px;
         margin: 9px 0px 0px 28px; } }
   header .rates-logo {
-    width: 230px; }
+    width: 227px;
+    height: 38px;
+    margin-top: -3px; }
     @media (min-width: 576px) {
       header .rates-logo {
         width: 140px;
@@ -6406,7 +6408,7 @@ header {
     @media (min-width: 768px) {
       header .rates-logo {
         width: 147px;
-        height: 27px;
+        height: 26px;
         margin-top: -7px; } }
     @media (min-width: 992px) {
       header .rates-logo {
