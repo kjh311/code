@@ -6353,18 +6353,6 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
-.second .form-wrapper, .second .pig-wrapper {
-  outline: 2px solid yellow; }
-  @media (min-width: 576px) {
-    .second .form-wrapper, .second .pig-wrapper {
-      outline: 2px solid orange; } }
-  @media (min-width: 768px) {
-    .second .form-wrapper, .second .pig-wrapper {
-      outline: 2px solid red; } }
-  @media (min-width: 992px) {
-    .second .form-wrapper, .second .pig-wrapper {
-      outline: 2px solid purple; } }
-
 .mockup {
   z-index: 100;
   opacity: 0.5;
@@ -6429,15 +6417,19 @@ header {
         margin: 19px 20px 0px 0px; } }
 
 .second {
-  padding: 19px 18px 0px 18px;
+  padding: 19px 18px 65px 18px;
   max-width: 370px; }
   @media (min-width: 576px) {
     .second {
-      padding: 18px 15px 0px 15px; } }
+      padding: 18px 15px 35px 15px; } }
   @media (min-width: 768px) {
     .second {
+      max-width: 700px;
+      padding: 36px 15px 50px 15px; } }
+  @media (min-width: 992px) {
+    .second {
       max-width: 1200px;
-      padding: 36px 15px 0px 15px; } }
+      padding: 67px 15px 110px 0px; } }
   .second .form-wrapper {
     height: 792px;
     max-width: 354px;
@@ -6453,9 +6445,18 @@ header {
         max-width: 300px;
         margin-left: 57px;
         height: 505px; } }
+    @media (min-width: 992px) {
+      .second .form-wrapper {
+        max-width: 490px;
+        margin-left: 0px;
+        height: 633px; } }
   @media (min-width: 768px) {
     .second .pig-wrapper {
       max-width: 300px; } }
+  @media (min-width: 992px) {
+    .second .pig-wrapper {
+      max-width: 610px;
+      margin-left: 0px; } }
   .second .checkup-text {
     color: #3a3a3a;
     font-size: 2.1em;
@@ -6472,10 +6473,13 @@ header {
         line-height: 29px; } }
     @media (min-width: 768px) {
       .second .checkup-text {
+        margin-top: 30px;
         font-size: 3em;
         text-align: left;
         text-align-last: left;
-        line-height: 49px; } }
+        text-justify: initial;
+        letter-spacing: 1px;
+        line-height: 56px; } }
   .second .stacks-text {
     color: #8e8e8e;
     font-size: 1.15em;
@@ -6486,5 +6490,14 @@ header {
       .second .stacks-text {
         font-size: 0.76em;
         margin-top: -2px; } }
+    @media (min-width: 768px) {
+      .second .stacks-text {
+        margin-top: -8px; } }
+  .second .pig-logo {
+    width: 270px;
+    margin: 41px 0px 0px -15px; }
+
+.third {
+  border-top: 2px solid #e4e4e4; }
 
 /*# sourceMappingURL=style.css.map */
