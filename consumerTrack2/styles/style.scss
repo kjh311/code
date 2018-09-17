@@ -36,6 +36,10 @@ input, select{
     background-color: $clear;
     outline: none;
     color: $light-font;
+    	@include media-breakpoint-up(sm) { 
+			border-radius: 5px;
+			border: 1px solid $border-color;
+		}
 }
 
 //////////
@@ -136,6 +140,9 @@ header{
 			}
 			.name-form-div{
 				color: $light-font;
+					@include media-breakpoint-up(sm) { 
+						padding: 32px 15px 0px 15px;			
+					}
 				.esp-text{
 					margin-top: 50px;
 					color: $dark-font;
@@ -144,24 +151,44 @@ header{
 					text-justify: inter-word;
 					text-align-last: justify;
 					font-size: 1.8em;
+						@include media-breakpoint-up(sm) { 
+							font-size: 1.3em;
+							margin-top: 0px;
+							line-height: 30px;
+						}
 				}
 				.first-name-text{
-					margin-top: 50px;
+					margin: 50px 0px 0px 0px;
 					letter-spacing: 1px;
 					font-size: 1.4em;
 					font-weight: 200;
+						@include media-breakpoint-up(sm) { 
+							font-size: 0.8em;
+							margin-top: 30px;
+							letter-spacing: 0px;
+						}
 				}
 				.first-name-input{
 					margin-top: -6px;
 					height: 55px;
 					width: 305px;
 					text-transform: capitalize;
+						@include media-breakpoint-up(sm) { 
+							width: 236px;
+							height: 33px;
+							margin: 7px 0px 0px -4px;
+						}
 				}
 				.born-on-text{
 					letter-spacing: 1.2px;
 					font-size: 1.4em;
 					font-weight: 200;
 					margin-top: 37px;
+						@include media-breakpoint-up(sm) { 
+							font-size: 0.8em;
+							margin: 28px 0px 0px 0px;
+							letter-spacing: 0px;
+						}
 				}
 				.drop{
 					// color: $light-font;
@@ -170,26 +197,50 @@ header{
 					font-size: 1.4em;
 					font-weight: 200;
 					letter-spacing: 1.5px;
+					@include media-breakpoint-up(sm) { 
+						height: 32px;
+						font-size: 0.9em;
+					}
 				}
 				.month-drop{
 					width: 305px;
 					text-indent: 12px;
 					margin:-5px 0px 0px 5px;
+						@include media-breakpoint-up(sm) { 
+							margin: 6px 0px 0px 0px;
+							width: 105px;
+							left: 25px;
+							position: absolute;
+						}
 				}
 				.day-drop{
 					margin: 8px 0px 0px 5px;
 					width: 150px;
 					text-indent: 12px;
-					// margin-left: -5px;
+						@include media-breakpoint-up(sm) { 
+							// margin: 7px 0px 0px 5px;
+							width: 55px;
+							margin: 6px 0px 0px 0px;
+							right: 94px;
+							position: absolute;
+						}
 				}
 				.year-drop{
 					margin-top: 8px;
 					width: 150px;
 					text-indent: 20px;
+						@include media-breakpoint-up(sm) { 
+							// margin: 7px 0px 0px 5px;
+							width: 65px;
+							margin: 6px 0px 0px 0px;
+							right: 23px;
+							position: absolute;
+						}
 					// margin-left: 10px;
 				}
 				.retire-drop{
-					margin: -5px 0px 0px 6px;
+					margin: -5px 0px 0px 0px;
+
 					width: 92px;
 					height: 50px;
 					text-indent: 15px;
@@ -204,6 +255,11 @@ header{
 					position: absolute;
 					z-index: -10;
 					color: $light-font;
+						@include media-breakpoint-up(sm) { 
+							margin: 0px 0px 0px 5px;
+							// margin-top: -10px;
+							// display: none;
+						}
 				}
 				.fa1{
 					margin: 4px 0px 0px 269px;

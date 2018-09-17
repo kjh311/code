@@ -6355,7 +6355,7 @@ a.text-dark:focus, a.text-dark:hover {
 
 .mockup {
   z-index: -10;
-  opacity: 0.2;
+  opacity: 0.5;
   position: absolute;
   top: 0;
   margin-left: auto;
@@ -6379,6 +6379,10 @@ input, select {
   background-color: rgba(0, 0, 0, 0);
   outline: none;
   color: #8e8e8e; }
+  @media (min-width: 576px) {
+    input, select {
+      border-radius: 5px;
+      border: 1px solid #e4e4e4; } }
 
 header {
   border-bottom: 2px solid #e4e4e4;
@@ -6463,6 +6467,9 @@ header {
         height: 633px; } }
     .second .form-wrapper .name-form-div {
       color: #8e8e8e; }
+      @media (min-width: 576px) {
+        .second .form-wrapper .name-form-div {
+          padding: 32px 15px 0px 15px; } }
       .second .form-wrapper .name-form-div .esp-text {
         margin-top: 50px;
         color: #3a3a3a;
@@ -6471,40 +6478,82 @@ header {
         text-justify: inter-word;
         text-align-last: justify;
         font-size: 1.8em; }
+        @media (min-width: 576px) {
+          .second .form-wrapper .name-form-div .esp-text {
+            font-size: 1.3em;
+            margin-top: 0px;
+            line-height: 30px; } }
       .second .form-wrapper .name-form-div .first-name-text {
-        margin-top: 50px;
+        margin: 50px 0px 0px 0px;
         letter-spacing: 1px;
         font-size: 1.4em;
         font-weight: 200; }
+        @media (min-width: 576px) {
+          .second .form-wrapper .name-form-div .first-name-text {
+            font-size: 0.8em;
+            margin-top: 30px;
+            letter-spacing: 0px; } }
       .second .form-wrapper .name-form-div .first-name-input {
         margin-top: -6px;
         height: 55px;
         width: 305px;
         text-transform: capitalize; }
+        @media (min-width: 576px) {
+          .second .form-wrapper .name-form-div .first-name-input {
+            width: 236px;
+            height: 33px;
+            margin: 7px 0px 0px -4px; } }
       .second .form-wrapper .name-form-div .born-on-text {
         letter-spacing: 1.2px;
         font-size: 1.4em;
         font-weight: 200;
         margin-top: 37px; }
+        @media (min-width: 576px) {
+          .second .form-wrapper .name-form-div .born-on-text {
+            font-size: 0.8em;
+            margin: 28px 0px 0px 0px;
+            letter-spacing: 0px; } }
       .second .form-wrapper .name-form-div .drop {
         height: 52px;
         font-size: 1.4em;
         font-weight: 200;
         letter-spacing: 1.5px; }
+        @media (min-width: 576px) {
+          .second .form-wrapper .name-form-div .drop {
+            height: 32px;
+            font-size: 0.9em; } }
       .second .form-wrapper .name-form-div .month-drop {
         width: 305px;
         text-indent: 12px;
         margin: -5px 0px 0px 5px; }
+        @media (min-width: 576px) {
+          .second .form-wrapper .name-form-div .month-drop {
+            margin: 6px 0px 0px 0px;
+            width: 105px;
+            left: 25px;
+            position: absolute; } }
       .second .form-wrapper .name-form-div .day-drop {
         margin: 8px 0px 0px 5px;
         width: 150px;
         text-indent: 12px; }
+        @media (min-width: 576px) {
+          .second .form-wrapper .name-form-div .day-drop {
+            width: 55px;
+            margin: 6px 0px 0px 0px;
+            right: 94px;
+            position: absolute; } }
       .second .form-wrapper .name-form-div .year-drop {
         margin-top: 8px;
         width: 150px;
         text-indent: 20px; }
+        @media (min-width: 576px) {
+          .second .form-wrapper .name-form-div .year-drop {
+            width: 65px;
+            margin: 6px 0px 0px 0px;
+            right: 23px;
+            position: absolute; } }
       .second .form-wrapper .name-form-div .retire-drop {
-        margin: -5px 0px 0px 6px;
+        margin: -5px 0px 0px 0px;
         width: 92px;
         height: 50px;
         text-indent: 15px; }
@@ -6512,6 +6561,9 @@ header {
         position: absolute;
         z-index: -10;
         color: #8e8e8e; }
+        @media (min-width: 576px) {
+          .second .form-wrapper .name-form-div .fa {
+            margin: 0px 0px 0px 5px; } }
       .second .form-wrapper .name-form-div .fa1 {
         margin: 4px 0px 0px 269px; }
       .second .form-wrapper .name-form-div .fa2 {
