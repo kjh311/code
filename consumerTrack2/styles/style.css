@@ -6354,8 +6354,8 @@ a.text-dark:focus, a.text-dark:hover {
   visibility: hidden !important; }
 
 .mockup {
-  z-index: 100;
-  opacity: 0.5;
+  z-index: -10;
+  opacity: 0.2;
   position: absolute;
   top: 0;
   margin-left: auto;
@@ -6368,6 +6368,17 @@ body {
 
 .container-fluid {
   max-width: 1200px; }
+
+input, select {
+  border-radius: 8px;
+  border: 2px solid #e4e4e4;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+  color: #8e8e8e; }
 
 header {
   border-bottom: 2px solid #e4e4e4;
@@ -6450,14 +6461,83 @@ header {
         max-width: 490px;
         margin-left: 7px;
         height: 633px; } }
-    .second .form-wrapper .name-form-div .esp-text {
-      margin-top: 50px;
-      color: #3a3a3a;
-      line-height: 40px;
-      text-align: justify;
-      text-justify: inter-word;
-      text-align-last: justify;
-      font-size: 1.8em; }
+    .second .form-wrapper .name-form-div {
+      color: #8e8e8e; }
+      .second .form-wrapper .name-form-div .esp-text {
+        margin-top: 50px;
+        color: #3a3a3a;
+        line-height: 40px;
+        text-align: justify;
+        text-justify: inter-word;
+        text-align-last: justify;
+        font-size: 1.8em; }
+      .second .form-wrapper .name-form-div .first-name-text {
+        margin-top: 50px;
+        letter-spacing: 1px;
+        font-size: 1.4em;
+        font-weight: 200; }
+      .second .form-wrapper .name-form-div .first-name-input {
+        margin-top: -6px;
+        height: 55px;
+        width: 305px;
+        text-transform: capitalize; }
+      .second .form-wrapper .name-form-div .born-on-text {
+        letter-spacing: 1.2px;
+        font-size: 1.4em;
+        font-weight: 200;
+        margin-top: 37px; }
+      .second .form-wrapper .name-form-div .drop {
+        height: 52px;
+        font-size: 1.4em;
+        font-weight: 200;
+        letter-spacing: 1.5px; }
+      .second .form-wrapper .name-form-div .month-drop {
+        width: 305px;
+        text-indent: 12px;
+        margin: -5px 0px 0px 5px; }
+      .second .form-wrapper .name-form-div .day-drop {
+        margin: 8px 0px 0px 5px;
+        width: 150px;
+        text-indent: 12px; }
+      .second .form-wrapper .name-form-div .year-drop {
+        margin-top: 8px;
+        width: 150px;
+        text-indent: 20px; }
+      .second .form-wrapper .name-form-div .retire-drop {
+        margin: -5px 0px 0px 6px;
+        width: 92px;
+        height: 50px;
+        text-indent: 15px; }
+      .second .form-wrapper .name-form-div .fa {
+        position: absolute;
+        z-index: -10;
+        color: #8e8e8e; }
+      .second .form-wrapper .name-form-div .fa1 {
+        margin: 4px 0px 0px 269px; }
+      .second .form-wrapper .name-form-div .fa2 {
+        margin: 18px 0px 0px 117px; }
+      .second .form-wrapper .name-form-div .fa3 {
+        margin: 18px 0px 0px 110px; }
+      .second .form-wrapper .name-form-div .fa4 {
+        margin: 4px 0px 0px 64px; }
+      .second .form-wrapper .name-form-div .alarm-font {
+        font-size: 1.3em;
+        margin-top: 38px;
+        letter-spacing: 0.9px; }
+      .second .form-wrapper .name-form-div .submit-button-name-form {
+        margin: 46px 0px 0px 2px;
+        width: 205px;
+        height: 58px;
+        border-radius: 7px;
+        font-size: 1.5em;
+        background-color: #d0d0d0;
+        cursor: pointer; }
+      .second .form-wrapper .name-form-div .submit-button-name-form:hover {
+        background-color: #9e9e9e; }
+      .second .form-wrapper .name-form-div .name-form:valid .submit-button-name-form {
+        background: #79b74d; }
+      .second .form-wrapper .name-form-div .name-form:valid .submit-button-name-form:hover {
+        background: #60913d; }
   @media (min-width: 768px) {
     .second .pig-wrapper {
       max-width: 300px; } }
@@ -6465,7 +6545,7 @@ header {
     .second .pig-wrapper {
       max-width: 540px;
       margin-left: 0px; } }
-  .second .checkup-text {
+  .second .pig-wrapper .checkup-text {
     color: #3a3a3a;
     font-size: 2.1em;
     text-align: justify;
@@ -6473,14 +6553,14 @@ header {
     text-align-last: justify;
     line-height: 47px; }
     @media (min-width: 576px) {
-      .second .checkup-text {
+      .second .pig-wrapper .checkup-text {
         font-size: 1.6em;
         text-align: center;
         text-align-last: center;
         letter-spacing: 1.5px;
         line-height: 29px; } }
     @media (min-width: 768px) {
-      .second .checkup-text {
+      .second .pig-wrapper .checkup-text {
         margin-top: 30px;
         font-size: 3em;
         text-align: left;
@@ -6489,35 +6569,35 @@ header {
         letter-spacing: 1px;
         line-height: 56px; } }
     @media (min-width: 992px) {
-      .second .checkup-text {
+      .second .pig-wrapper .checkup-text {
         font-size: 4.2em;
         margin-top: 38px;
         line-height: 76px;
         letter-spacing: 2px;
         font-weight: 500; } }
-  .second .stacks-text {
+  .second .pig-wrapper .stacks-text {
     color: #8e8e8e;
     font-size: 1.15em;
     text-align: justify;
     text-justify: inter-word;
     text-align-last: justify; }
     @media (min-width: 576px) {
-      .second .stacks-text {
+      .second .pig-wrapper .stacks-text {
         font-size: 0.76em;
         margin-top: -2px; } }
     @media (min-width: 768px) {
-      .second .stacks-text {
+      .second .pig-wrapper .stacks-text {
         margin-top: -8px; } }
     @media (min-width: 992px) {
-      .second .stacks-text {
+      .second .pig-wrapper .stacks-text {
         font-size: 1.3em;
         margin: -2px 0px 0px -3px; } }
-  .second .pig-logo {
+  .second .pig-wrapper .pig-logo {
     width: 270px;
     height: 125px;
     margin: 25px 0px 0px -28px; }
     @media (min-width: 992px) {
-      .second .pig-logo {
+      .second .pig-wrapper .pig-logo {
         margin: 65px 0px 0px -35px;
         width: 430px;
         height: 193px; } }
