@@ -27,7 +27,7 @@
     <!-- <img src="mockups/large_Mobile_Error.png" alt="" class="mockup"> -->
     <!-- <img src="mockups/large_Mobile_Success.png" alt="" class="mockup"> -->
     <!-- <img src="mockups/mobile_Small_Name.png" alt="" class="mockup"> -->
-    <!-- <img src="mockups/mobile_Small_Email.png" alt="" class="mockup"> -->
+    <img src="mockups/mobile_Small_Email.png" alt="" class="mockup">
     <!-- <img src="mockups/mobile_Small_Error.png" alt="" class="mockup"> -->
     <!-- <img src="mockups/mobile_Small_Success.png" alt="" class="mockup"> -->
 
@@ -49,7 +49,7 @@
 			<div class="form-wrapper col-12 col-md-6 order-2 order-md-1 ">
 
 <!-- NAME FORM -->
-				<div class="name-form-div">
+				<div class="name-form-div d-none">
 					<p class="esp-text ">We'd fill this out for you, but we don't have E.S.P.</p>
 
 					<form action="" class="name-form text-center"   name="infoForm" onsubmit="validateNameForm();return false;">
@@ -290,12 +290,25 @@
 
                             </br>
 
-                                 <input class="submit-button-name-form btn text-white" type="submit" value="Start Now" >
+                                 <input class="name-form-submit-button btn text-white" type="submit" value="Start Now" >
 					</form>
 				</div>
 
 <!-- EMAIL FORM -->
-				<div class="email-form">
+				<div class="email-form-div">
+					<p class="first-things-text text-center">First things first, lets make sure we keep you safe.</p>
+					<p class="why-create-account-text text-center">Why do you need to create an accoung? Safety first kids. Plus, if you get distacted (i.e. your boss walks past your desk), you can pick up right where you left off.</p>
+
+					
+					<form class="email-form" action="index_submit" method="get" accept-charset="utf-8">
+						<input class="email-input text-center" type="email" name="Email address" placeholder="Email address">
+					</br>
+						<input class="email-form-submit-btn btn text-white" type="submit" value="Next">
+					</form>
+
+					<p class="have-account-text text-center">Already have an account? <a href="" title="">Sign In.</a></p>
+
+					
 					
 				</div>
 			</div>

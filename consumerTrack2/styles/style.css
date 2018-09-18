@@ -6363,13 +6363,22 @@ a.text-dark:focus, a.text-dark:hover {
   right: 0;
   left: 0; }
 
+a,
+a:hover {
+  color: #79b74d; }
+
+.btn {
+  background-color: #d0d0d0;
+  cursor: pointer; }
+
 body {
   font-size: 16px; }
 
 .container-fluid {
   max-width: 1200px; }
 
-input, select {
+input,
+select {
   border-radius: 8px;
   border: 2px solid #e4e4e4;
   -webkit-appearance: none;
@@ -6380,7 +6389,8 @@ input, select {
   outline: none;
   color: #8e8e8e; }
   @media (min-width: 576px) {
-    input, select {
+    input,
+    select {
       border-radius: 5px;
       border: 1px solid #e4e4e4; } }
 
@@ -6729,18 +6739,16 @@ header {
             font-size: 1.15em;
             letter-spacing: 0.1px;
             margin: 67px 10px 0px 5px; } }
-      .second .form-wrapper .name-form-div .submit-button-name-form {
+      .second .form-wrapper .name-form-div .name-form-submit-button {
         margin: 46px 0px 0px 2px;
         width: 205px;
         height: 58px;
         border-radius: 7px;
         padding-top: 2px;
         font-size: 1.6em;
-        letter-spacing: 0.8px;
-        background-color: #d0d0d0;
-        cursor: pointer; }
+        letter-spacing: 0.8px; }
         @media (min-width: 576px) {
-          .second .form-wrapper .name-form-div .submit-button-name-form {
+          .second .form-wrapper .name-form-div .name-form-submit-button {
             margin: 33px 0px 0px 3px;
             width: 124px;
             height: 35px;
@@ -6749,23 +6757,23 @@ header {
             border-radius: 3px;
             letter-spacing: 0px; } }
         @media (min-width: 768px) {
-          .second .form-wrapper .name-form-div .submit-button-name-form {
+          .second .form-wrapper .name-form-div .name-form-submit-button {
             margin: 34px 0px 0px 0px;
             width: 129px;
             height: 36px; } }
         @media (min-width: 992px) {
-          .second .form-wrapper .name-form-div .submit-button-name-form {
+          .second .form-wrapper .name-form-div .name-form-submit-button {
             margin: 40px 0px 0px -2px;
             width: 173px;
             height: 49px;
             font-size: 1.3em;
             padding-top: 4px;
             letter-spacing: 0.8px; } }
-      .second .form-wrapper .name-form-div .submit-button-name-form:hover {
+      .second .form-wrapper .name-form-div .name-form-submit-button:hover {
         background-color: #9e9e9e; }
-      .second .form-wrapper .name-form-div .name-form:valid .submit-button-name-form {
+      .second .form-wrapper .name-form-div .name-form:valid .name-form-submit-button {
         background: #79b74d; }
-      .second .form-wrapper .name-form-div .name-form:valid .submit-button-name-form:hover {
+      .second .form-wrapper .name-form-div .name-form:valid .name-form-submit-button:hover {
         background: #60913d; }
   @media (min-width: 768px) {
     .second .pig-wrapper {
