@@ -6394,6 +6394,15 @@ select {
       border-radius: 5px;
       border: 1px solid #e4e4e4; } }
 
+.name-form-submit-button:hover, .email-form-submit-btn:hover {
+  background-color: #9e9e9e; }
+
+.name-form:valid .name-form-submit-button, .email-form:valid .email-form-submit-btn {
+  background: #79b74d; }
+
+.name-form:valid .name-form-submit-button:hover, .email-form:valid .email-form-submit-btn:hover {
+  background: #60913d; }
+
 header {
   border-bottom: 2px solid #e4e4e4;
   padding-bottom: 12px; }
@@ -6769,12 +6778,122 @@ header {
             font-size: 1.3em;
             padding-top: 4px;
             letter-spacing: 0.8px; } }
-      .second .form-wrapper .name-form-div .name-form-submit-button:hover {
-        background-color: #9e9e9e; }
-      .second .form-wrapper .name-form-div .name-form:valid .name-form-submit-button {
-        background: #79b74d; }
-      .second .form-wrapper .name-form-div .name-form:valid .name-form-submit-button:hover {
-        background: #60913d; }
+    .second .form-wrapper .email-form-div {
+      color: #8e8e8e; }
+      .second .form-wrapper .email-form-div .first-things-text {
+        font-size: 1.8em;
+        margin: 63px 20px 0px 20px;
+        letter-spacing: 1px;
+        line-height: 41px; }
+        @media (min-width: 576px) {
+          .second .form-wrapper .email-form-div .first-things-text {
+            font-size: 1.2em;
+            margin: 34px 0px 0px 0px;
+            line-height: 30px; } }
+        @media (min-width: 768px) {
+          .second .form-wrapper .email-form-div .first-things-text {
+            font-size: 1.4em;
+            width: 300px;
+            margin: 35px 0px 0px -16px;
+            line-height: 32px;
+            letter-spacing: 1.2px; } }
+        @media (min-width: 992px) {
+          .second .form-wrapper .email-form-div .first-things-text {
+            font-size: 2em;
+            width: 445px;
+            margin: 41px 0px 0px 5px;
+            line-height: 41px;
+            letter-spacing: 0.7px; } }
+      .second .form-wrapper .email-form-div .why-create-account-text {
+        font-size: 1.2em;
+        margin: 18px 0px 0px 0px;
+        line-height: 34px; }
+        @media (min-width: 576px) {
+          .second .form-wrapper .email-form-div .why-create-account-text {
+            font-size: 0.8em;
+            margin: 7px 9px 0px 9px;
+            line-height: 21px; } }
+        @media (min-width: 768px) {
+          .second .form-wrapper .email-form-div .why-create-account-text {
+            font-size: 0.8em;
+            margin: 7px 0px 0px -11px;
+            line-height: 22px;
+            width: 290px; } }
+        @media (min-width: 992px) {
+          .second .form-wrapper .email-form-div .why-create-account-text {
+            font-size: 1.2em;
+            margin: 12px 0px 0px 18px;
+            line-height: 29px;
+            width: 425px; } }
+      .second .form-wrapper .email-form-div .email-input {
+        margin: 57px 0px 0px 0px;
+        width: 303px;
+        height: 62px;
+        font-size: 1.45em;
+        padding-top: 0px; }
+        @media (min-width: 576px) {
+          .second .form-wrapper .email-form-div .email-input {
+            margin: 49px 0px 0px 0px;
+            width: 235px;
+            height: 38px;
+            font-size: 0.8em; } }
+        @media (min-width: 768px) {
+          .second .form-wrapper .email-form-div .email-input {
+            margin: 60px 0px 0px 2px;
+            width: 247px;
+            height: 39px;
+            font-size: 0.85em;
+            padding-bottom: 2px; } }
+        @media (min-width: 992px) {
+          .second .form-wrapper .email-form-div .email-input {
+            margin: 71px 0px 0px 0px;
+            width: 400px;
+            height: 52px;
+            font-size: 1.2em;
+            padding-bottom: 3px; } }
+      .second .form-wrapper .email-form-div .email-form-submit-btn {
+        margin: 105px 0px 0px 2px;
+        width: 202px;
+        height: 57px;
+        font-size: 1.6em;
+        padding-top: 0px; }
+        @media (min-width: 576px) {
+          .second .form-wrapper .email-form-div .email-form-submit-btn {
+            margin: 64px 0px 0px 0px;
+            width: 123px;
+            height: 35px;
+            font-size: 0.95em;
+            padding-top: 2px; } }
+        @media (min-width: 768px) {
+          .second .form-wrapper .email-form-div .email-form-submit-btn {
+            margin: 60px 0px 0px 2px;
+            width: 130px;
+            height: 36px;
+            font-size: 1em;
+            padding-top: 3px; } }
+        @media (min-width: 992px) {
+          .second .form-wrapper .email-form-div .email-form-submit-btn {
+            margin: 72px 0px 0px 1px;
+            width: 173px;
+            height: 49px;
+            font-size: 1.4em;
+            padding-top: 4px; } }
+      .second .form-wrapper .email-form-div .have-account-text {
+        margin: 16px 0px 0px -1px;
+        letter-spacing: 0.01em; }
+        @media (min-width: 576px) {
+          .second .form-wrapper .email-form-div .have-account-text {
+            margin: 11px 0px 0px 0px;
+            letter-spacing: 0.01em;
+            font-size: 0.57em; } }
+        @media (min-width: 768px) {
+          .second .form-wrapper .email-form-div .have-account-text {
+            margin: 12px 0px 0px 2px;
+            font-size: 0.6em; } }
+        @media (min-width: 992px) {
+          .second .form-wrapper .email-form-div .have-account-text {
+            margin: 10px 0px 0px 2px;
+            font-size: 0.83em; } }
   @media (min-width: 768px) {
     .second .pig-wrapper {
       max-width: 300px; } }

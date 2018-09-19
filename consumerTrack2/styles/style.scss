@@ -1,5 +1,5 @@
 @import "../bootstrap/scss/bootstrap";
-@import "border";
+@import "mockup";
 
 //////////
 //Colors//
@@ -49,6 +49,16 @@ select {
         border-radius: 5px;
         border: 1px solid $border-color;
     }
+}
+
+.name-form-submit-button:hover, .email-form-submit-btn:hover {
+    background-color: $unvalidated-hover;
+}
+.name-form:valid .name-form-submit-button, .email-form:valid .email-form-submit-btn {
+    background: $validated-color;
+}
+.name-form:valid .name-form-submit-button:hover, .email-form:valid .email-form-submit-btn:hover {
+    background: $validated-hover;
 }
 
 
@@ -481,23 +491,150 @@ header {
                     letter-spacing: 0.8px;
                 }
             }
-            .name-form-submit-button:hover {
-                background-color: $unvalidated-hover;
-            }
-            .name-form:valid .name-form-submit-button {
-                background: $validated-color;
-            }
-            .name-form:valid .name-form-submit-button:hover {
-                background: $validated-hover;
-            }
+            
         }
 //////////////
 //EMAIL FORM//
 //////////////
         .email-form-div {
+        	color: $light-font;
+        	 	@include media-breakpoint-up(sm) {
+
+        		 }
+        		 @include media-breakpoint-up(md) {
+
+        		 }
+        		 @include media-breakpoint-up(lg) {
+        		 	
+        		 }
+        	.first-things-text{
+        		font-size: 1.8em;
+        		margin: 63px 20px 0px 20px;
+        		letter-spacing: 1px;
+        		line-height: 41px;
+        		// @extend %color-border;
+        		 @include media-breakpoint-up(sm) {
+        		 	font-size: 1.2em;
+        		 	margin: 34px 0px 0px 0px;
+        		 	line-height: 30px;
+        		 }
+        		 @include media-breakpoint-up(md) {
+        		 	font-size: 1.4em;
+        		 	width: 300px;
+        		 	margin: 35px 0px 0px -16px;
+        		 	line-height: 32px;
+        		 	letter-spacing: 1.2px;
+        		 }
+        		 @include media-breakpoint-up(lg) {
+        		 	font-size: 2em;
+        		 	width: 445px;
+        		 	margin: 41px 0px 0px 5px;
+        		 	line-height: 41px;
+        		 	letter-spacing: 0.7px;
+        		 }
+        	}
+        	.why-create-account-text{
+        		font-size: 1.2em;
+        		// width: 330px;
+        		// @extend %color-border;
+        		margin: 18px 0px 0px 0px;
+        		line-height: 34px;
+        		// letter-spacing: 0px;
+        		 @include media-breakpoint-up(sm) {
+        		 	// width: 240px;
+        		 	font-size: 0.8em;
+        		 	margin: 7px 9px 0px 9px;
+        		 	line-height: 21px;
+        		 	// letter-spacing: 0px;
+        		 }
+        		 @include media-breakpoint-up(md) {
+        		 	font-size: 0.8em;
+        		 	margin: 7px 0px 0px -11px;
+        		 	line-height: 22px;
+        		 	width: 290px;
+        		 	// letter-spacing: 0.3px;
+        		 }
+        		 @include media-breakpoint-up(lg) {
+        		 	font-size: 1.2em;
+        		 	margin: 12px 0px 0px 18px;
+        		 	line-height: 29px;
+        		 	width: 425px;
+        		 }
+        	}
+        	.email-input{
+        		margin: 57px 0px 0px 0px;
+        		width: 303px;
+        		height: 62px;
+        		font-size: 1.45em;
+        		padding-top: 0px;
+        		@include media-breakpoint-up(sm) {
+        			margin: 49px 0px 0px 0px;
+	        		width: 235px;
+	        		height: 38px;
+	        		font-size: 0.8em;
+        		 }
+        		 @include media-breakpoint-up(md) {
+        		 	margin: 60px 0px 0px 2px;
+	        		width: 247px;
+	        		height: 39px;
+	        		font-size: 0.85em;
+	        		padding-bottom: 2px;
+        		 }
+        		 @include media-breakpoint-up(lg) {
+        		 	margin: 71px 0px 0px 0px;
+	        		width: 400px;
+	        		height: 52px;
+	        		font-size: 1.2em;
+	        		padding-bottom: 3px;
+        		 }
+        	}
             .email-form-submit-btn {
-                // background-color: $unvalidated-color;
-                // cursor: pointer;
+            	margin: 105px 0px 0px 2px;
+            	width: 202px;
+            	height: 57px;
+            	font-size: 1.6em;
+            	padding-top: 0px;
+
+            	 @include media-breakpoint-up(sm) {
+            	 	margin: 64px 0px 0px 0px;
+	            	width: 123px;
+	            	height: 35px;
+	            	font-size: 0.95em;
+	            	padding-top: 2px;
+        		 }
+        		 @include media-breakpoint-up(md) {
+        		 	margin: 60px 0px 0px 2px;
+	            	width: 130px;
+	            	height: 36px;
+	            	font-size: 1em;
+	            	padding-top: 3px;
+        		 }
+        		 @include media-breakpoint-up(lg) {
+        		 	margin: 72px 0px 0px 1px;
+	            	width: 173px;
+	            	height: 49px;
+	            	font-size: 1.4em;
+	            	padding-top: 4px;
+        		 }
+            }
+            .have-account-text{
+            	margin: 16px 0px 0px -1px;
+            	letter-spacing: 0.01em;
+            	 @include media-breakpoint-up(sm) {
+            	 	margin: 11px 0px 0px 0px;
+            		letter-spacing: 0.01em;
+            		font-size: 0.57em;
+        		 }
+        		 @include media-breakpoint-up(md) {
+        		 	margin: 12px 0px 0px 2px;
+            		// letter-spacing: 0.012em;
+            		font-size: 0.6em;
+        		 }
+        		 @include media-breakpoint-up(lg) {
+        		 	margin: 10px 0px 0px 2px;
+            		// letter-spacing: 0.012em;
+            		font-size: 0.83em;
+        		 }
             }
         }
     }
