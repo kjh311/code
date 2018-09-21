@@ -26,12 +26,32 @@ a:hover {
 
 body {
     font-size: 16px;
+    color: $light-font;
 }
 
 .container-fluid {
     // @extend %color-border;
     // height: 100px;
     max-width: 1200px;
+}
+
+.exponent{
+	font-size: 35px;
+	color: $light-font;
+	position: absolute;
+	// margin: -22px 0px 0px 3px;
+	@include media-breakpoint-up(sm) {
+		font-size: 20px;
+		// margin: -15px 0px 0px 135px;
+	}
+	@include media-breakpoint-up(md) {
+		font-size: 42px;
+		// margin: -23px 0px 0px 247px;
+	}
+	@include media-breakpoint-up(lg) {
+		font-size: 53px;
+		// margin: -30px 0px 0px 330px;
+	}
 }
 
 input,
@@ -44,7 +64,7 @@ select {
     text-overflow: '';
     background-color: $clear;
     outline: none;
-    color: $light-font;
+    // color: $light-font;
     @include media-breakpoint-up(sm) {
         border-radius: 5px;
         border: 1px solid $border-color;
@@ -159,7 +179,7 @@ header {
 //NAME FORM//
 /////////////
         .name-form-div {
-            color: $light-font;
+            // color: $light-font;
             @include media-breakpoint-up(sm) {
                 padding: 32px 15px 0px 15px;
             }
@@ -251,7 +271,7 @@ header {
                 }
             }
             .drop {
-                // color: $light-font;
+                color: $light-font;
                 height: 52px; // padding-left: 60px;
                 font-size: 1.4em;
                 font-weight: 200;
@@ -375,7 +395,7 @@ header {
             .fa {
                 position: absolute;
                 z-index: -10;
-                color: $light-font;
+                // color: $light-font;
                 @include media-breakpoint-up(sm) {
                     margin: 0px 0px 0px 5px; // margin-top: -10px;
                     // display: none;
@@ -497,7 +517,7 @@ header {
 //EMAIL FORM//
 //////////////
         .email-form-div {
-        	color: $light-font;
+        	// color: $light-font;
         	 	@include media-breakpoint-up(sm) {
 
         		 }
@@ -686,7 +706,7 @@ header {
             }
         }
         .stacks-text {
-            color: $light-font;
+            // color: $light-font;
             font-size: 1.15em;
             text-align: justify;
             text-justify: inter-word;
@@ -724,7 +744,7 @@ header {
     border-bottom: 1px solid $border-color;
     padding: 56px 0px 41px 0px;
     max-width: 350px;
-    color: $light-font;
+    // color: $light-font;
     // pa
     @include media-breakpoint-up(sm) {
     	max-width: 370px;
@@ -788,7 +808,185 @@ header {
 ///////////////////
 //fourth-container//
 ///////////////////
-.fourth {}
+.fourth {
+	// @extend %color-border;
+	padding: 44px 0px 0px 0px;
+	
+	width: 235px;
+	color: $dark-font;
+	@include media-breakpoint-up(sm) {
+		width: 275px;
+		padding: 49px 0px 0px 5px;
+		// left: 12px;
+	}
+	@include media-breakpoint-up(md) {
+		width: 475px;
+		padding: 63px 0px 0px 0px;
+		height: 336px;
+	}
+	@include media-breakpoint-up(lg) {
+		padding: 113px 0px 0px 10px;
+		width: 675px;
+		height: 480px;
+	}
+
+	.fourth-over{
+		font-size: 1.8em;
+		letter-spacing: 1px;
+		font-weight: 500;
+		}
+		@include media-breakpoint-up(sm) {
+			font-size: 0.6em;
+		}
+		@include media-breakpoint-up(md) {
+			font-size: 0.8em;
+		}
+		@include media-breakpoint-up(lg) {
+			font-size: 1.1em;
+		}
+	.billion-text{
+		font-size: 4.3em;
+		line-height: 97px;
+		padding: 6px 0px 0px 0px;
+		position: relative;
+		letter-spacing: 3px;
+		font-weight: 500;
+		@include media-breakpoint-up(sm) {
+			letter-spacing: 2.5px;
+			padding: 0px 0px 0px 0px;
+			margin: -14px 0px 0px -14px;
+		}
+		@include media-breakpoint-up(md) {
+			font-size: 6.3em;
+			letter-spacing: 4px;
+			margin: 14px 0px 0px -4px;
+		}
+		@include media-breakpoint-up(lg) {
+			margin: 39px 0px 0px -4px;
+		}
+		.exponent{
+			// font-size: 35px;
+			// color: $light-font;
+			// position: absolute;
+			margin: -22px 0px 0px 3px;
+			@include media-breakpoint-up(sm) {
+				// font-size: 20px;
+				margin: -15px 0px 0px 135px;
+			}
+			@include media-breakpoint-up(md) {
+				// font-size: 42px;
+				margin: -23px 0px 0px 247px;
+			}
+			@include media-breakpoint-up(lg) {
+				// font-size: 53px;
+				margin: -30px 0px 0px 330px;
+			}
+		}
+	}
+	.assets-text{
+		font-size: 1.9em;
+		margin-top: 15px;
+		line-height: 40px;
+		border-bottom: 2px solid $border-color;
+		padding-bottom: 85px;
+		// @extend %color-border;
+		@include media-breakpoint-up(sm) {
+			font-size: 1.8em;
+			margin-top: -25px;
+			font-weight: 400;
+			letter-spacing: 0.3px;
+			padding-bottom: 27px;
+		}
+		@include media-breakpoint-up(md) {
+			margin-top: 35px;
+			width: 290px;
+			letter-spacing: 0.5px;
+			position: absolute;
+			margin-left: auto; 
+			margin-right: auto; 	
+			right: 0;
+			left: 0;
+			padding-bottom: 51px;
+		}
+		@include media-breakpoint-up(lg) {
+			width: 390px;
+			// margin-left: 5px;
+			padding: 32px 0px 78px 5px;
+			letter-spacing: 0.5px;
+		}
+
+	}
+}
+
+///////////////////
+//fifth-container//
+///////////////////
+.fifth {
+	@extend %color-border;
+	color: $dark-font;
+	width: 360px;
+	padding-bottom: 48px;
+	border-bottom: 2px solid $border-color;
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	.fifth-over{
+		margin: 45px 0px 0px 2px;
+		font-size: 1.7em;
+		letter-spacing: 2px;
+		font-weight: 500;
+		@include media-breakpoint-up(sm) {
+			margin: 25px 0px 0px 4px;
+			font-size: 1em;
+			letter-spacing: 1px;
+		}
+		@include media-breakpoint-up(md) {
+		}
+		@include media-breakpoint-up(lg) {
+		}
+	}
+	.large-text{
+		font-size: 4.3em;
+		font-weight: 500;
+		margin: 5px 0px 0px -10px;
+		letter-spacing: 3px;
+		position: relative;
+		@include media-breakpoint-up(sm) {
+		}
+		@include media-breakpoint-up(md) {
+		}
+		@include media-breakpoint-up(lg) {
+		}
+		.exponent{
+			margin: 4px 0px 0px -3px;
+			@include media-breakpoint-up(sm) {
+			}
+			@include media-breakpoint-up(md) {
+			}
+			@include media-breakpoint-up(lg) {
+			}
+		}
+	}
+	.analyzed-text{
+		font-size: 1.8em;
+		letter-spacing: 0.8px;
+		margin: 10px 0px 0px 0px;
+		@include media-breakpoint-up(sm) {
+		}
+		@include media-breakpoint-up(md) {
+		}
+		@include media-breakpoint-up(lg) {
+		}
+	}
+}
+
+///////////////////
+//sixth-container//
+///////////////////
+.sixth {}
 
 //////////
 //footer//
