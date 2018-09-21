@@ -315,7 +315,7 @@ header {
                 }
             }
             .day-drop {
-                margin: 8px 0px 0px 5px;
+                margin: 9px 0px 0px 5px;
                 width: 150px;
                 text-indent: 12px;
                 @include media-breakpoint-up(sm) {
@@ -364,7 +364,7 @@ header {
                 } // margin-left: 10px;
             }
             .retire-drop {
-                margin: 13px 0px 0px 4px;
+                margin: 12px 0px 0px 4px;
 
                 width: 92px;
                 height: 50px;
@@ -454,7 +454,7 @@ header {
             }
             .alarm-font {
                 font-size: 1.3em;
-                margin: 38px 0px 0px 0px;
+                margin: 37px 0px 0px 0px;
                 letter-spacing: 0.9px;
                 @include media-breakpoint-up(sm) {
                     // margin: 12px 0px 0px 100px;
@@ -889,7 +889,7 @@ header {
         }
         @include media-breakpoint-up(lg) {
             width: 390px; // margin-left: 5px;
-            padding: 32px 0px 78px 5px;
+            padding: 33px 0px 78px 5px;
             letter-spacing: 0.5px;
         }
     }
@@ -1162,6 +1162,70 @@ header {
 //////////
 //footer//
 //////////
-footer {
+.footer {
+	// @extend %color-border;
     border-top: 1px solid $border-color;
+    width: 100vw;
+    @include media-breakpoint-up(sm) {
+    	width: 405px;
+    	max-width: 90vw;
+	}
+	@include media-breakpoint-up(md) {
+		width: 575px;
+	}
+	@include media-breakpoint-up(lg) {
+		width: 1130px;
+	}
+    .numbers-text{
+    	font-size: 0.85em;
+    	margin: 14px 0px 0px -15px;
+    	@include media-breakpoint-up(sm) {
+    		font-size: 0.5em;
+    		margin: 8px 0px 0px 0px;
+		}
+		@include media-breakpoint-up(md) {
+			margin: 9px 0px 0px 0px;
+			letter-spacing: 0.1px;
+		}
+		@include media-breakpoint-up(lg) {
+			font-size: 0.7em;
+    		margin: 15px 0px 0px 0px;
+		}
+
+    }
+    .copyright-text{
+
+    	font-size: 0.85em;
+    	margin: 29px 0px 0px 7px;
+    	@include media-breakpoint-up(sm) {
+    		font-size: 0.5em;
+    		margin: 9px 0px 0px 15px;
+		}
+		@include media-breakpoint-up(md) {
+			margin: 9px 0px 0px 15px;
+		}
+		@include media-breakpoint-up(lg) {
+			font-size: 0.7em;
+			margin: 17px 0px 0px 20px;
+		}
+
+    	.copy-symbol{
+    		position: absolute;
+    		font-size: 1.4em;
+    		margin: -5px 0px 0px -69px;
+    		@include media-breakpoint-up(sm) {
+    			margin: -4px 0px 0px -42px;
+    			font-size: 1.5em;
+			}
+			@include media-breakpoint-up(md) {
+				font-size: 1.6em;
+				margin: -5px 0px 0px -44px;
+			}
+			@include media-breakpoint-up(lg) {
+				font-size: 1.5em;
+				margin: -5px 0px 0px -59px;
+			}
+
+    	}
+    }
 }
