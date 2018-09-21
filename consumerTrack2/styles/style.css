@@ -6354,7 +6354,7 @@ a.text-dark:focus, a.text-dark:hover {
   visibility: hidden !important; }
 
 .mockup {
-  z-index: -10;
+  z-index: 10;
   opacity: 0.5;
   position: absolute;
   top: 0;
@@ -6408,13 +6408,16 @@ select {
       border-radius: 5px;
       border: 1px solid #e4e4e4; } }
 
-.name-form-submit-button:hover, .email-form-submit-btn:hover {
+.name-form-submit-button:hover,
+.email-form-submit-btn:hover {
   background-color: #9e9e9e; }
 
-.name-form:valid .name-form-submit-button, .email-form:valid .email-form-submit-btn {
+.name-form:valid .name-form-submit-button,
+.email-form:valid .email-form-submit-btn {
   background: #79b74d; }
 
-.name-form:valid .name-form-submit-button:hover, .email-form:valid .email-form-submit-btn:hover {
+.name-form:valid .name-form-submit-button:hover,
+.email-form:valid .email-form-submit-btn:hover {
   background: #60913d; }
 
 header {
@@ -7205,5 +7208,132 @@ header {
         font-size: 1.9em;
         margin: 28px 0px 0px 7px;
         letter-spacing: 1px; } }
+
+.sixth {
+  width: 320px;
+  height: 434px; }
+  @media (min-width: 576px) {
+    .sixth {
+      width: 370px;
+      height: 223px; } }
+  @media (min-width: 768px) {
+    .sixth {
+      width: 500px;
+      height: 301px; } }
+  @media (min-width: 992px) {
+    .sixth {
+      width: 962px;
+      height: 263px; } }
+  .sixth .employees-text {
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 1.7px;
+    margin: 48px 0px 0px 0px;
+    line-height: 44px; }
+    @media (min-width: 576px) {
+      .sixth .employees-text {
+        font-size: 1.2em;
+        line-height: 27px;
+        margin: 42px 0px 0px 0px;
+        letter-spacing: 0.2px; } }
+    @media (min-width: 768px) {
+      .sixth .employees-text {
+        font-size: 1.9em;
+        line-height: 42px;
+        margin: 72px 0px 0px 0px;
+        letter-spacing: 1.8px; } }
+    @media (min-width: 992px) {
+      .sixth .employees-text {
+        font-size: 2.5em;
+        margin: 108px 0px 0px 10px;
+        letter-spacing: 2.8px; } }
+  .sixth .logos-wrapper {
+    margin: 40px 0px 0px 0px; }
+    @media (min-width: 992px) {
+      .sixth .logos-wrapper {
+        margin: 75px 0px 0px 0px; } }
+    .sixth .logos-wrapper ul {
+      list-style: none;
+      padding: 0px 0px 0px 0px; }
+    .sixth .logos-wrapper .logo {
+      position: absolute; }
+    .sixth .logos-wrapper .linkedin-logo {
+      width: 137px;
+      margin: 3px 0px 0px -10px; }
+      @media (min-width: 576px) {
+        .sixth .logos-wrapper .linkedin-logo {
+          width: 83px;
+          margin: 6px 0px 0px -5px; } }
+      @media (min-width: 768px) {
+        .sixth .logos-wrapper .linkedin-logo {
+          width: 88px;
+          margin: 9px 0px 0px 50px; } }
+      @media (min-width: 992px) {
+        .sixth .logos-wrapper .linkedin-logo {
+          margin: 0px 0px 0px 2px;
+          width: 122px; } }
+    .sixth .logos-wrapper .amazon-logo {
+      width: 150px;
+      margin: 3px 0px 0px 150px; }
+      @media (min-width: 576px) {
+        .sixth .logos-wrapper .amazon-logo {
+          width: 90px;
+          margin: 6px 0px 0px 151px; } }
+      @media (min-width: 768px) {
+        .sixth .logos-wrapper .amazon-logo {
+          width: 95px;
+          margin: 10px 0px 0px 214px; } }
+      @media (min-width: 992px) {
+        .sixth .logos-wrapper .amazon-logo {
+          margin: 0px 0px 0px 226px;
+          width: 129px; } }
+    .sixth .logos-wrapper .apple-logo {
+      width: 52px;
+      margin: 83px 0px 0px 21px; }
+      @media (min-width: 576px) {
+        .sixth .logos-wrapper .apple-logo {
+          width: 33px;
+          margin: -3px 0px 0px 313px; } }
+      @media (min-width: 768px) {
+        .sixth .logos-wrapper .apple-logo {
+          width: 34px;
+          margin: -1px 0px 0px 384px; } }
+      @media (min-width: 992px) {
+        .sixth .logos-wrapper .apple-logo {
+          margin: -14px 0px 0px 460px;
+          width: 46px; } }
+    .sixth .logos-wrapper .cisco-logo {
+      width: 116px;
+      margin: 87px 0px 0px 153px; }
+      @media (min-width: 576px) {
+        .sixth .logos-wrapper .cisco-logo {
+          width: 70px;
+          margin: 51px 0px 0px 78px; } }
+      @media (min-width: 768px) {
+        .sixth .logos-wrapper .cisco-logo {
+          width: 73px;
+          margin: 69px 0px 0px 116px; } }
+      @media (min-width: 992px) {
+        .sixth .logos-wrapper .cisco-logo {
+          margin: -10px 0px 0px 610px;
+          width: 100px; } }
+    .sixth .logos-wrapper .oracle-logo {
+      width: 140px;
+      margin: 192px 0px 0px 75px; }
+      @media (min-width: 576px) {
+        .sixth .logos-wrapper .oracle-logo {
+          width: 88px;
+          margin: 62px 0px 0px 220px; } }
+      @media (min-width: 768px) {
+        .sixth .logos-wrapper .oracle-logo {
+          width: 88px;
+          margin: 81px 0px 0px 265px; } }
+      @media (min-width: 992px) {
+        .sixth .logos-wrapper .oracle-logo {
+          margin: 1px 0px 0px 815px;
+          width: 123px; } }
+
+footer {
+  border-top: 1px solid #e4e4e4; }
 
 /*# sourceMappingURL=style.css.map */
