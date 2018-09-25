@@ -51,7 +51,7 @@
 			<div class="form-wrapper col-12 col-md-6 order-2 order-md-1 ">
 
 <!-- NAME FORM -->
-				<div id="name-form-div" class="name-form-div d-block">
+				<div id="name-form-div" class="name-form-div d-none">
 					<p class="esp-text ">We'd fill this out for you, but we don't have E.S.P.</p>
 
 					<form action="" class="name-form text-center"   name="infoForm" onsubmit="validateNameForm();return false;">
@@ -299,7 +299,7 @@
 				</div>
 
 <!-- EMAIL FORM -->
-				<div id="email-form-div" class="email-form-div d-none">
+				<div id="email-form-div" class="email-form-div d-block">
 					<p class="first-things-text text-center">First things first, lets make sure we keep you safe.</p>
 					<p class="why-create-account-text text-center">Why do you need to create an account?
 					<br class="d-none d-md-block">
@@ -311,6 +311,10 @@
 						<div class="d-flex justify-content-center">
 							<input class="email-input text-center" type="email" name="Email address" placeholder="Email address" required>
 						</div>
+						<div class="email-error-div d-flex justify-content-center invisible">
+								<img class="exclamation" src="assets/exclamation.png" alt="exclamation sign">
+								<p class="email-error-text">Looks like this account already exist, <a href="" class="sign-in" title="">Sign In.</a></p>
+							</div>
 						<div class="d-flex justify-content-center">
 							</ br>
 							<input class="email-form-submit-btn btn text-white" type="submit" value="Next">
