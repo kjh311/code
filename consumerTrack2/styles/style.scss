@@ -66,6 +66,10 @@ select {
     }
 }
 
+// input:invalid { 
+//     border: 2px solid red;
+// }
+
 .name-form-submit-button:hover,
 .email-form-submit-btn:hover {
     background-color: $unvalidated-hover;
