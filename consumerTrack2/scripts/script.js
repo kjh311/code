@@ -18,7 +18,7 @@ function validateNameForm() {
 	var year18YearsAgo = parseInt(date18YearsAgoArray[2] - 18);
 	var nameFormWrapper = document.getElementById("name-form-div");
 	var emailWrapper = document.getElementById("email-form-div");
-
+	var errorText = document.getElementById("age-error-text");
 
 	console.log("Year born on was " + bornYear);
 	console.log("Month born on was " + bornMonth);
@@ -38,7 +38,9 @@ function validateNameForm() {
 	// console.log(calculate_age(new Date(bornYear, bornMonth, bornDay)));
 
 	if(calculate_age(new Date(bornYear, bornMonth, bornDay)) < 18){
-		alert("you must 18 or older to enter");
+		// alert("you must 18 or older to enter");
+		errorText.classList.remove("no-opacity"); 
+    	errorText.classList.add("opacity"); 
 		return false;
 	}
 

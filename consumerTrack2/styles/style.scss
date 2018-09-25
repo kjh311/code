@@ -70,6 +70,19 @@ select {
 //     border: 2px solid red;
 // }
 
+.no-opacity{
+	opacity: 0;
+}
+
+.opacity{
+	opacity: 1;
+	-webkit-transition: opacity 0.5s ease-in;
+		       -moz-transition: opacity 0.5s ease-in;
+		        -ms-transition: opacity 0.5s ease-in;
+		         -o-transition: opacity 0.5s ease-in;
+		            transition: opacity 0.5s ease-in;
+}
+
 .name-form-submit-button:hover,
 .email-form-submit-btn:hover {
     background-color: $unvalidated-hover;
@@ -85,13 +98,6 @@ select {
     background: $validated-hover;
 }
 
-// .visible {
-//     display: initial;
-// }
-
-// .hidden {
-//     display: none;
-// }
 
 //////////
 //header//
@@ -523,6 +529,23 @@ header {
                     padding-top: 4px; // border-radius: 10px;
                     letter-spacing: 0.8px;
                 }
+            }
+            .age-error-text{
+            	color: $error-font;
+            	font-size: 1.2em;
+            	margin: 10px 0px 0px 0px;
+            	// opacity: 1;
+            	
+            	@include media-breakpoint-up(sm) {
+            		font-size: 0.9em;
+            		// margin: 10px 0px 0px 0px;
+            	}
+	            @include media-breakpoint-up(md) {
+	            	font-size: 1.1em;
+	            }
+	            @include media-breakpoint-up(lg) {
+	            	font-size: 1.4em;
+	            }
             }
         }
         //////////////
