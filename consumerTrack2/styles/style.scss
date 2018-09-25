@@ -72,6 +72,11 @@ select {
 
 .no-opacity{
 	opacity: 0;
+	-webkit-transition: opacity 0.5s ease-in;
+		       -moz-transition: opacity 0.5s ease-in;
+		        -ms-transition: opacity 0.5s ease-in;
+		         -o-transition: opacity 0.5s ease-in;
+		            transition: opacity 0.5s ease-in;
 }
 
 .opacity{
@@ -81,6 +86,16 @@ select {
 		        -ms-transition: opacity 0.5s ease-in;
 		         -o-transition: opacity 0.5s ease-in;
 		            transition: opacity 0.5s ease-in;
+}
+
+.blinking-text {
+	animation: blinker 1s linear 2;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 .name-form-submit-button:hover,
@@ -534,6 +549,7 @@ header {
             	color: $error-font;
             	font-size: 1.2em;
             	margin: 10px 0px 0px 0px;
+
             	// opacity: 1;
             	
             	@include media-breakpoint-up(sm) {
@@ -547,6 +563,7 @@ header {
 	            	font-size: 1.4em;
 	            }
             }
+
         }
         //////////////
         //EMAIL FORM//
