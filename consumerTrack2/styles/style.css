@@ -6354,7 +6354,7 @@ a.text-dark:focus, a.text-dark:hover {
   visibility: hidden !important; }
 
 .mockup {
-  z-index: 10;
+  z-index: -10;
   opacity: 0.5;
   position: absolute;
   top: 0;
@@ -6912,8 +6912,7 @@ header {
       max-width: 300px; } }
   @media (min-width: 992px) {
     .second .pig-wrapper {
-      max-width: 540px;
-      margin-left: 0px; } }
+      max-width: 540px; } }
   .second .pig-wrapper .checkup-text {
     color: #3a3a3a;
     font-size: 2.1em;

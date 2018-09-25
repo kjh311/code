@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <!-- FONT AWESOME -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -45,11 +46,12 @@
 
 <!-- SECOND CONTAINER -->
 	<div class="container-fluid second ">
+
 		<div class="row d-flex justify-content-center justify-content-lg-between">
 			<div class="form-wrapper col-12 col-md-6 order-2 order-md-1 ">
 
 <!-- NAME FORM -->
-				<div class="name-form-div">
+				<div id="name-form-div" class="name-form-div d-block">
 					<p class="esp-text ">We'd fill this out for you, but we don't have E.S.P.</p>
 
 					<form action="" class="name-form text-center"   name="infoForm" onsubmit="validateNameForm();return false;">
@@ -57,7 +59,9 @@
 						
 						<p class="first-name-text">My first name is...</p>
 
+
 						  <input type="text" class="first-name-input text-center" type="text" name="firstname" required  pattern="[A-Za-z]+" oninvalid="setCustomValidity('Please enter a first name. Only letters and no spaces')" onchange="try{setCustomValidity('')}catch(e){}" />
+
 						  <p class="born-on-text">I was born on...</p>
 
 						  <i class="fa fa1 fa-2x fa-angle-down" aria-hidden="true"></i>
@@ -295,7 +299,7 @@
 				</div>
 
 <!-- EMAIL FORM -->
-				<div class="email-form-div d-none">
+				<div id="email-form-div" class="email-form-div d-none">
 					<p class="first-things-text text-center">First things first, lets make sure we keep you safe.</p>
 					<p class="why-create-account-text text-center">Why do you need to create an account?
 					<br class="d-none d-md-block">
